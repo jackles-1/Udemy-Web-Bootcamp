@@ -1,0 +1,38 @@
+body{
+	/*you use "url" even though it's linking to a local image*/
+	background: url(kitten.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: Lato;
+	color: white;
+}
+
+/*Without this, the image wasn't behaving the way we want, because the html document
+actually wasn't covering the whole page. So this sets it to take up the whole window.*/
+html{
+	height: 100%;
+}
+
+#content{
+	text-align: center;
+
+	/*because we used a percent here instead of a fixed value, when the screen is resized the padding will change (so it will look better on phones)*/
+	padding-top: 25%;
+
+	/*In text shadow, you have (x-offset y-offset blur-radius color). So here we have three different blurs
+	layered on top of each other.*/
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h1{
+	font-weight: 700;
+	font-size: 5em;
+}
+
+hr{
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}

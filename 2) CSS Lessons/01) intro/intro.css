@@ -1,0 +1,26 @@
+h1{
+	color: #FF0000;
+
+	/*setting borders--need all three folowing properties for a border to show up*/
+	/*border-color: white;
+	border-width: 5px;
+	border-style: solid;*/
+
+	/*alternate syntax*/
+	border: 5px solid white;
+}
+li{
+	color: #00FF00;
+}
+h4{
+	color: #0000FF;
+	background: rgb(255,100,80);
+}
+body{
+	/*sets background to an image (you can also do a color)*/
+	background: url(http://wallpapercave.com/wp/Tb3g7Fv.jpg);
+	/*sets background to not tile*/
+	background-repeat: no-repeat;
+	/*sets background to cover screen*/
+	background-size: cover; 
+}

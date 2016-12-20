@@ -1,0 +1,33 @@
+img{
+	width: 30%;
+
+	/*Float takes things out of the "flow" of the document.
+	In this case, it took out the white space that was automtaically
+	added between the photos. In another case, it might take elements that
+	are normally stacked on top of each other and put them in line.*/
+	float: left;
+
+	/*This number is 10/6. Since we have three photos in a row accross the 
+	page at 30% width, we are left with 10% to allocate to the margins. The 
+	6 comes from the fact that there are 6 margins taking up that space--on either
+	side of all three photos.*/
+	margin: 1.66%;
+}
+
+p{
+	font-family: "Raleway";
+
+	font-size: 23px;
+
+	font-weight: 800;
+
+	margin-left: 1.66%;
+
+	text-transform: uppercase;
+
+	width: 30%;
+
+	padding-bottom: 20px;
+
+	border-bottom: 4px solid #f1f1f1;
+}

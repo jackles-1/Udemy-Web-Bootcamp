@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!-- to use bootstrap, you have to download it from their website, unzip, open it and copy css/bootstrap.css into your project folder (bootstrap.min.css is the same file and will load a little faster, harder to read as a human though), then link to it in the HTML doc -->
+<html>
+<head>
+	<title>Bootstrap Basics</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+	<!-- an example of how you can make changes to Boostrap (this should normally be in its own CSS file) -->
+	<style type="text/css">
+
+		/*so here we're changing the btn-danger attribute to have orange text*/
+		.btn-danger{
+			color: orange;
+		}
+	</style>
+
+</head>
+<body>
+
+<h1>Boostrap Basics</h1>
+
+<!-- using Bootstrap's btn class attributes on a button element -->
+<button class="btn btn-success btn-s"-Click Me!</button>
+
+<button class="btn btn-danger btn-s">Danger!</button>
+
+<!-- using Bootstrap's btn class attributes on an anchor element -->
+<a href="http://getbootstrap.com/" class="btn btn-info btn-lg">Bootstrap Docs</a>
+
+<!-- jumbotrons are set to take up all of the space inside whatever container they're in -->
+
+<div class="container">
+	<div class="jumbotron">
+		<h1>This is a Jumbotron</h1>
+		<p>asdfl;kjawer ;asdiuf asdl;kjaerlkjasdf weuhsdlkf jasd;lkma sdl;fkjwer</p>
+		<button class="btn btn-success btn-lg">I am a button!</button>
+	</div>
+
+	<!-- basic form code copied from the boostrap docs -->
+	<form>
+
+		<!-- form group lets you group together a label and input so their spacing makes sense -->
+  		<div class="form-group">
+  		  	<label for="exampleInputEmail1">Email address</label>
+
+ 		  	 <!-- form control makes things look better -->
+  		 	 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+ 		</div>
+ 		 <div class="form-group">
+    		<label for="exampleInputPassword1">Password		</label>
+    		<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+ 		 </div>
+ 		 <div class="form-group">
+    		<label for="exampleInputFile">File input</label>
+    		<input type="file" id="exampleInputFile">
+    		<p class="help-block">Example block-level help text here.</p>
+ 		 </div>
+ 		 <div class="checkbox">
+    		<label>
+      			<input type="checkbox"> Check me out
+    		</label>
+ 		 </div>
+ 		 <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+<!-- inline form -->
+<form class="form-inline">
+  	<div class="form-group">
+    <label for="exampleInputName2">Name</label>
+    	<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+  	</div>
+  	<div class="form-group">
+    	<label for="exampleInputEmail2">Email</label>
+    	<input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+  	</div>
+  	<button type="submit" class="btn btn-default">Send invitation</button>
+</form>
+
+	
+</div>
+
+</body>
+</html>

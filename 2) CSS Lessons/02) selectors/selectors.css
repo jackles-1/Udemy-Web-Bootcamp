@@ -1,0 +1,55 @@
+ID SELECTOR*/
+/*this is how you call out an id specified in the html doc in your CSS*/
+#walk{
+	color: blue;
+}
+
+/*ELEMENT SELECTOR*/
+li{
+	border: 2px purple solid;
+}
+
+/*CLASS SELECTOR*/
+/*this is how you call out a class specified in the html doc*/
+.special{
+	background-color: yellow;
+}
+
+/*STAR SELECTOR*/
+/*selects every element in the html doc*/
+*{
+	border: 1px solid lightgrey;
+}
+
+/*DESCENDANT SELECTOR*/
+/*takes two or more tag names and links them together*/
+li a{
+	color: purple;
+}
+/*so this will select every a tag inside of an li (you can nest even farther)*/
+
+
+/*ADJACENT SELECTOR*/
+/*lets us select elements that come after another element*/
+h4 + ul{
+	border: 2px solid red;
+}
+/*so this selects all instances of an ul right after an h4*/
+
+/*ATTRIBUTE SELECTOR*/
+/*selects all instances of an attribute*/
+a[href="http://www.google.com"]{
+	background: grey;
+}
+/*so this selects every anchor tag with href=to that url*/
+input[type="text"]{
+
+}
+/*do this will select all text inputs*/
+
+/*NTH OF TYPE SELECTOR*/
+li:nth-of-type(3){
+
+}
+/*so this will select the third li in every list on the page*/
+/*you can put even in instead of the 3 in this example, to get every other*/

@@ -1,0 +1,147 @@
+<!-- need to type in this line by hand -->
+<!DOCTYPE html>
+
+<!-- type in "html + TAB" to get boilerplate form -->
+<html>
+<head>
+
+<!--metadata goes in the head-->
+
+	<title>My First Page</title>
+</head>
+<body>
+<!-- content goes in the body -->
+<!-- h# tags create different sized headers (smaller number=bigger) -->
+<h1>hello world</h1>
+<h2>This is an h2 heading</h2>
+<h6>This is an h6 heading</h6>
+
+<!-- strong has replaced bold(b), and em has replaced itallic(i) -->
+<p>adf;<strong>lkjasdf </strong>;laksdjf</p>
+<p>;alsdkjf a<em>;sdkfja;</em>sdlkfj</p>
+
+<!-- ordered list (numbered) with line items -->
+<ol>
+	<li>dog</li>
+	<li>cat</li>
+	<li>bird</li>
+</ol>
+<!-- unordered list (bullets) with line items -->
+<ul>
+	<li>dog</li>
+	<li>cat</li>
+	<!-- nested list -->
+		<ul>
+			<li>Momo</li>
+		</ul>
+	<li>bird</li>
+</ul>
+
+<!-- image: img is an element, src is an attribute -->
+<img src="https://i.ytimg.com/vi/To8oesttqc4/hqdefault.jpg">
+
+<!-- link: a(anchor) is an element, href is an attribute -->
+<!-- link to an external site -->
+<a href="https://i.ytimg.com/vi/To8oesttqc4/hqdefault.jpg">Link to corgi</a>
+<!-- link to another local site -->
+<a href="secondPage.html">Link to Second Page</a>
+-->
+
+<!-- tables -->
+<table border="1">
+
+	<!-- table header information -->
+	<thead>
+		<!-- row -->
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Breed</th>
+		</tr>
+	</thead>
+
+	<!-- table body information -->
+	<tbody>
+		<tr>
+			<!-- table cell -->
+			<td>Sadie</td>
+			<td>9</td>
+			<td>Corgi/Beagle</td>
+		</tr>
+		<tr>
+			<td>Dodger</td>
+			<td>10</td>
+			<td>Corgi/Schipperke</td>
+		</tr>
+		<tr>
+			<td>Momo</td>
+			<td>1</td>
+			<td>Siberian mix</td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- forms -->
+<!-- action - where the form sends data to (defaults to current page) -->
+<!-- method - what HTTP method (get/post) (defaults to get) -->
+
+<h2>Login</h2>
+<form>
+<!-- if above is the default verson of the form tag, defaults explained above. below is a form tag with the attributes filled in -->
+<!-- <form action="/sign-in-url" method="post" -->
+	<!-- label syntax -->
+	<label>
+		Email:
+		<input name="email" type="email" placeholder="email" required>
+		<!-- the above "required" tag, doesn't work in every browser -->
+		<!-- required is a "presence validation" -->
+
+	</label>
+
+	<!-- alternate label syntax -->
+	<label for="password">Password:</label>
+	<input id="password" type="password" placeholder="password">
+	</label>
+
+	<input type="submit">
+</form>
+
+<!-- other input types -->
+<p>Do you prefer cats or dogs?</p>
+
+<form>
+	<!-- the "name" field in both options connects them -->
+	<label for="dogs">Dogs: </label>
+	<input name="petChoice" id="dogs" type="radio" value="DOGS">
+
+	<label for="cats">Cats: </label>
+	<input name="petChoice" id="cats" type="radio" value="CATS">
+
+	<p>What's your favorite color?</p>
+
+	<!-- the name attribute assigns the result of the form item to a value, which you can see in the URL after submitted (the previous form items were the same way) -->
+	<select name="color">
+
+		<!-- the value attribute allows you to store a different value from what the user sees -->
+		<option value="Azure">Blue</option>
+		<option>Green</option>
+		<option>Yellow</option>
+
+	</select>
+
+	<textarea name="paragraph" rows="10" cols="50"></textarea>
+
+	<!-- any button you put at the bottom of a form tag will submit it -->
+	<button>Go!</button>
+
+</form>
+
+<!-- <input type="checkbox">
+ -->
+<!-- checkboxes are dealt with just like radio buttons -->
+
+
+
+</body>
+</html>
+

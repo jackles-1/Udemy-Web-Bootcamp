@@ -1,0 +1,43 @@
+/*body has 20 px border
+border: #bdc3c7
+date color: #3498db
+h2 color: #2c3e50
+font: source sans pro
+the line is an hr
+*/
+
+body{
+	border: 20px solid #bdc3c7;
+	padding: 20px;
+	font-family: "Montserrat";
+
+	/*this gives you a max width, but lets it scale if the screen is smaller*/
+	max-width: 700px;
+	width: 80%;
+	
+	margin: 20px auto;
+}
+p{
+	font-size: 15px;
+}
+.first{
+	border-left: 5px solid #bdc3c7;
+	padding-left: 5px;
+}
+.date{
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+h2{
+	font-size: 30px;
+	color: #2c3e50;
+}
+hr{
+	border: 0; 
+	height: 1px; 
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.post{
+	margin-bottom: 20px;
+}

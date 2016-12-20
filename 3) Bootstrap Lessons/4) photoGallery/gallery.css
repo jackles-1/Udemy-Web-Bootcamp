@@ -1,0 +1,24 @@
+body{
+	padding-top: 70px;
+}
+.jumbotron{
+	color: #2c3e50;
+	background-color: #ecf0f1;
+}
+.navbar{
+	background-color: #2c3e50;
+}
+
+/*To get the following classes, I opened the page in a
+browser, and inspected the elements I'm trying to change.
+It shows a number of places colors are set crossed out, 
+because they are less specific. I copied the most specific 
+case from the element inspector, and that is what is pasted
+below.*/
+.navbar-inverse .navbar-nav > li > a{
+	color: white;
+}
+.navbar-inverse .navbar-brand
+{
+	color: white;
+}

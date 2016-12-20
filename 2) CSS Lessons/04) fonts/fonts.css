@@ -1,0 +1,60 @@
+/*font family*/
+/*To get fonts, go to Google Fonts, + the ones you want for your page, click the -
+and copy the link under embed. Paste that into your HTML doc, and you now have the fonts. */
+/*NOTE: having an excessive number of fonts on one page will slow it down*/
+p{
+	font-family: "Indie Flower";
+}
+
+h1{
+	font-family: "Bungee Inline"
+}
+
+/*font size*/
+/*px specifies size in pixels*/
+/*em specifies size related to size of other text in whatever it is nested in. 
+SO it's dynamic. It's good to set a font size for the body in px, so that 
+there is something for em to go off of.*/
+/*rem would make the font size relative to the base font, but you don't have to worry
+about nesting*/
+body{
+	font-size: 10px;
+}
+h1{
+	font-size: 80px;	
+}
+/*this will be twice as big as body*/
+p{
+	font-size: 2.0em;
+}
+/*this will be twic as big as p*/
+span{
+	font-size: 2.0em;
+}
+
+
+/*font weight*/
+p{
+	/*some fonts let you use a number (from 100-800 only whole hundres)*/
+	font-weight: bold;
+}
+
+
+/*line height*/
+p{
+	/*multiplies the current line height which is set by the font*/
+	line-height: 2;
+}
+
+/*text align*/
+h1{
+	text-align: right;
+}
+p{
+	text-align: center;
+}
+
+/*text decoration*/
+p{
+	text-decoration: underline;
+}

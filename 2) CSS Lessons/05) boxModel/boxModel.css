@@ -1,0 +1,30 @@
+p{
+	/*Content-Width and Height*/
+	/*changes width of box around p element (it defaults to all the way accross
+		the page*/
+	width: 50%;
+	/*The % here is of the parent element. This makes
+	it dynamic if the screen size is changed by the user.*/
+	/*width: 200px;*/
+	/*height: 300px;*/
+
+	/*Padding*/
+	/*padding: 10px;*/
+	padding-left: 40px;
+
+	/*Border*/
+	border: 2px solid blue;
+	/*border-left: 2px solid purple*/
+
+	/*Margin*/
+	/*margin-top: 500px;*/
+
+	/*margin: 20px 40px 500px 100px;*/
+		/*top, right, bottom, left*/
+
+	/*auto*/
+	/*centers right and left automatically*/
+	margin: 0 auto 0 auto;
+	/*margin: 20px auto*/
+	/*makes 20px on top and bottom and auto on left and right*/
+}

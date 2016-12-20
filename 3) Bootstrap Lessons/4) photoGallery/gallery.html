@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Image Gallery</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- since our CSS stylesheet edits things that are defaults in bootstrap, this link has to come second -->
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+
+	<!-- link to Font Awesome, which is where the camera icon came from (you can treat these icons like fonts, so you change their color, size, etc. the same way) -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- navbar -->
+<!-- navbar-fixed-top fixes the navbar to the top -->
+<!-- ***NOTE: the above messes up the spacing between the jumbotron and the navbar, to fix this, a css stylesheet has been linked in that adds padding to the top of the body -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+
+<!-- container, to keep the navbar from running to the end of the page (if we put the entire navbar inthe container, it will get cut off) -->
+<div class="container"> 
+
+  <!-- navbar header-first contains the "hamburger" code, then the "brand" (in this case, what shows up as "Koffee") -->
+  <div class="navbar-header">
+
+  <!-- this creates the "hamburger" when the screen shrinks to mobile size -->
+  <!-- here #bs-nav-demo is defining an id that lets you assign what shows up in the hamburger -->
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+  </button>
+
+    <!-- the "brand" -->
+    <!-- the span was copied from Bootstrap, and creates the photo icon -->
+    <a class="navbar-brand" href="#">
+    	<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+    	Images</a>
+  </div>
+
+  <!-- everything within this div will hide when the screen is brought down to mobile size -->
+  <!-- here we're calling the id from the hamburger code with bs-nav-demo -->
+  <div class="collapse navbar-collapse" id="bs-nav-demo">
+
+    <!-- we put the items in the navbar in a ul, and each button is a li -->
+    <ul class ="nav navbar-nav">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- right justified navbar items -->
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+    
+  </div>
+</div>
+</nav> 
+
+<!-- jumbotron -->
+<div class="container">
+	<div class="jumbotron">
+		<h1><i class="fa fa-camera-retro" aria-hidden="true"></i>
+		 The Image Gallery</h1>	
+		<p>A gallery of images!</p>
+	</div>
+
+<!-- photo grid -->
+<!-- you don't always need to put in multiple rows (it should set the rows automatically), BUT, because these images are different sizes, I had to do that to force them into the correct rows -->
+ 	<div class="row">
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+				<img src="alpinists.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+				<img src="dog.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+				<img src="fox.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+				<img src="lavendar.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+				<img src="mountains.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+				<img src="owl.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+				<img src="seal lion.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+				<img src="wood.jpg">
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+				<img src="owl2.jpg">
+			</div>
+		</div>
+	</div>
+</div> 
+
+
+  <!-- LINKS IN jQUERY (must come before bootstrap because bootstrap uses it)-->
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+  <!-- LINKS IN BOOTSTRAP.JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

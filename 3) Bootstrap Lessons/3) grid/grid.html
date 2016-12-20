@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+	<!-- set up a classes so we can see the grids -->
+	<style type="text/css">
+	.pink{
+		background: pink;
+		border: 1px solid purple;
+	}
+	</style>
+	<style type="text/css">
+	.blue{
+		background: #ADD8E6;
+		border: 1px solid blue;
+	}
+	</style>
+	<style type="text/css">
+	.orange{
+		background: #FFA500;
+		border: 1px solid red;
+	}
+	</style>
+
+</head>
+<body>
+
+	<!-- container -->
+	<div class="container">
+
+		<!-- row -->
+		<div class="row">
+
+			<!-- sections of the row, divided using the total 12 units in bootstrap containers -->
+			<!-- without specifying units for a screen size, it will default to all of them -->
+			<!-- lg: large desktop screen
+			md: small desktop screen
+			sm: tablet screen
+			xs: mobile screen -->
+
+			<!-- These columns take up 1 unit when the screen is large, and 2 when it is scaled to medium. They take up the full width below that screen size. -->
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		</div>
+
+		<!-- These columns take up 3 units (1/4 of the screen) at lg and md screen sizes, 6 (1/2 of the screen) at sm size, and the default 12 (whole screen) at xs size -->
+		<!-- NOTE: because we haven't specified lg, but have specified md, which is smaller, lg will follow md's behavior -->
+		<div class="row">
+
+			<!-- this column has a nested grid inside of it -->
+			<div class="col-md-3 col-sm-6 blue">
+				<div class="row">
+					<div class="col-lg-6 orange">NESTED GRID</div>
+					<div class="col-lg-6 orange">NESTED GRID</div>
+				</div>
+			</div>
+
+			<!-- single columns -->
+			<div class="col-md-3 col-sm-6 blue">COL LG 4</div>
+			<div class="col-md-3 col-sm-6 blue">COL LG 4</div>
+			<div class="col-md-3 col-sm-6 blue">COL LG 4</div>
+		</div>
+	</div>
+
+</body>
+</html>
