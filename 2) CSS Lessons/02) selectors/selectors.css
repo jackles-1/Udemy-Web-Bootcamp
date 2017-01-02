@@ -53,3 +53,5 @@ li:nth-of-type(3){
 }
 /*so this will select the third li in every list on the page*/
 /*you can put even in instead of the 3 in this example, to get every other*/
+
+/*THERE IS ALSO FIRST-OF-TYPE*/
