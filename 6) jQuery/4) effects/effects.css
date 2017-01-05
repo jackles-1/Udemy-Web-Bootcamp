@@ -2,4 +2,6 @@ div{
 	width: 100px;
 	height: 100px;
 	background: teal;
+	margin: 20px;
+	float: left;
 }

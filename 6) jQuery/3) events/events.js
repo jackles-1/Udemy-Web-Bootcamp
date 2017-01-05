@@ -14,9 +14,9 @@ $("h1").on("click", function(){
 
 // mouseenter and mouseleave can be replaced by CSS's hover
 $("button").on("mouseenter", function(){
-	$this.css("font-weight", "bold")
+	$(this).css("font-weight", "bold")
 });
 
 $("button").on("mouseleave", function(){
-	$this.css("font-weight", "normal")
+	$(this).css("font-weight", "normal")
 });
